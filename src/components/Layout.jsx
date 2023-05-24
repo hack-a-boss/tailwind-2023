@@ -47,7 +47,7 @@ export const Layout = () => {
         author: "Lavanya Ramanathan",
       },
     ],
-    terciary: [
+    tertiary: [
       {
         image: "https://picsum.photos/600/400?random=5",
 
@@ -76,23 +76,23 @@ export const Layout = () => {
   };
 
   return (
-    <section className="p-4 grid gap-4 md:grid-rows-2 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-4">
+    <section className="p-4 grid gap-4 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-4">
       {/* Main */}
-      <section className="md:col-start-2 md:col-end-4 divide-y">
+      <section className="group main md:col-start-2 md:col-end-4 md:divide-y">
         <BigCard {...news.main[0]} />
         <Card {...news.main[1]} />
       </section>
 
       {/* Secondary */}
-      <section className="md:col-start-1 md:row-start-1 divide-y">
+      <section className="group secondary md:col-start-1 md:row-start-1 md:divide-y">
         {news.secondary.map((item, index) => (
           <Card key={index} {...item} />
         ))}
       </section>
 
-      {/* Terciary */}
-      <section className="md:col-start-1 md:col-end-4 lg:col-start-4 lg:col-end-5 md:flex">
-        {news.terciary.map((item, index) => (
+      {/* Tertiary */}
+      <section className="group tertiary md:col-start-1 md:col-end-4 lg:col-start-4 md:flex md:gap-4 lg:flex-col lg:divide-y">
+        {news.tertiary.map((item, index) => (
           <Card key={index} {...item} />
         ))}
       </section>

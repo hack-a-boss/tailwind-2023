@@ -7,6 +7,12 @@ function App() {
         Top Stories
       </h1>
       <Layout />
+      <p className="p-4 bg-gray-400 mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa esse
+        maiores impedit eaque cumque corrupti ea quae! Rerum esse nisi nihil
+        soluta dolores autem, praesentium, nulla officiis voluptatum nesciunt
+        dicta.
+      </p>
     </main>
   );
 }
